@@ -1,0 +1,10 @@
+Matthew Hauser
+EN.600.420
+
+The SparkTwitterTagger.py relies on Spark and takes 2 arguments as input, so it can be run:
+
+.spark-1.2.0/bin/sparksubmit src/SparkTwitterTagger.py data/train data/test local[2]
+
+It will subsequently generate a log file which contains the predictions for each tweet in the test data.
+
+The line contains whether or not it was right or wrong, the tweet, the prediction and logprobability of the prediction and the accuracy that it has had up until that point.
